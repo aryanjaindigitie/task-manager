@@ -1,0 +1,144 @@
+[debug] [2022-01-04T14:22:47.359Z] ----------------------------------------------------------------------
+[debug] [2022-01-04T14:22:47.360Z] Command:       /opt/homebrew/Cellar/node/15.11.0/bin/node /opt/homebrew/bin/firebase init
+[debug] [2022-01-04T14:22:47.360Z] CLI Version:   10.0.1
+[debug] [2022-01-04T14:22:47.360Z] Platform:      darwin
+[debug] [2022-01-04T14:22:47.360Z] Node Version:  v15.11.0
+[debug] [2022-01-04T14:22:47.361Z] Time:          Tue Jan 04 2022 19:52:47 GMT+0530 (India Standard Time)
+[debug] [2022-01-04T14:22:47.361Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-04T14:22:47.363Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-04T14:22:47.363Z] > authorizing via signed-in user (aryanj@digitizeco.in)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/aryanjain/Documents/GitHub/digitask
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-04T14:22:53.203Z] > refreshing access token with scopes: []
+[debug] [2022-01-04T14:22:53.204Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-04T14:22:53.423Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 04 Jan 2022 14:22:53 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-04T14:22:53.471Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-01-04T14:22:54.730Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-01-04T14:22:54.731Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project digitize-52e01 (digitize) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2022-01-04T14:23:15.086Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-01-04T14:23:15.202Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-01-04T14:23:15.202Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.6.1","browserURL":"https://www.gstatic.com/firebasejs/9.6.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.6.1/firebase.tgz"},"live":{"version":"9.6","browserURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.6.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.6.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.6.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.6.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.6.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.6.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.6.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.6.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/aryanjain/Documents/GitHub/digitask 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=456768982&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-01-04T14:23:23.243Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"418ff7a48d796f672a9b","redirect_uri":"http://localhost:9005","state":"456768982"}
+[debug] [2022-01-04T14:23:23.648Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Tue, 04 Jan 2022 14:23:23 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"e87a407a9c7d8e04af978306767012dd\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"D0C5:0B0A:8E85A2:AD6E4B:61D4585B"}
+[debug] [2022-01-04T14:23:23.656Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-01-04T14:23:24.081Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-01-04T14:23:24.081Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"aryanjaindigitie","id":88190525,"node_id":"MDQ6VXNlcjg4MTkwNTI1","avatar_url":"https://avatars.githubusercontent.com/u/88190525?v=4","gravatar_id":"","url":"https://api.github.com/users/aryanjaindigitie","html_url":"https://github.com/aryanjaindigitie","followers_url":"https://api.github.com/users/aryanjaindigitie/followers","following_url":"https://api.github.com/users/aryanjaindigitie/following{/other_user}","gists_url":"https://api.github.com/users/aryanjaindigitie/gists{/gist_id}","starred_url":"https://api.github.com/users/aryanjaindigitie/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/aryanjaindigitie/subscriptions","organizations_url":"https://api.github.com/users/aryanjaindigitie/orgs","repos_url":"https://api.github.com/users/aryanjaindigitie/repos","events_url":"https://api.github.com/users/aryanjaindigitie/events{/privacy}","received_events_url":"https://api.github.com/users/aryanjaindigitie/received_events","type":"User","site_admin":false,"name":"Aryan Jain","company":"Digitizeco","blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":9,"public_gists":0,"followers":0,"following":0,"created_at":"2021-07-30T10:39:06Z","updated_at":"2021-12-07T10:42:23Z","private_gists":0,"total_private_repos":3,"owned_private_repos":3,"disk_usage":56480,"collaborators":3,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as aryanjaindigitie 
+[info] 
+[debug] [2022-01-04T14:24:52.712Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2022-01-04T14:24:52.714Z] >>> [apiv2][query] GET https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/actions/secrets/public-key type=owner
+[debug] [2022-01-04T14:24:53.122Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2022-01-04T14:24:53.123Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest"}
+[debug] [2022-01-04T14:24:53.125Z] <<< [apiv2][status] GET https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/actions/secrets/public-key 200
+[debug] [2022-01-04T14:24:53.125Z] <<< [apiv2][body] GET https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/actions/secrets/public-key {"key_id":"568250167242549743","key":"k37y+RBqynlrXoWQF62o7cdDi0WGmhG5yfzIEpyu4jo="}
+[debug] [2022-01-04T14:24:53.127Z] >>> [apiv2][query] GET https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator [none]
+[debug] [2022-01-04T14:24:53.526Z] <<< [apiv2][status] GET https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator 200
+[debug] [2022-01-04T14:24:53.527Z] <<< [apiv2][body] GET https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator {"id":416758458,"node_id":"R_kgDOGNc6ug","name":"digitizeconfigurator","full_name":"aryanjaindigitie/digitizeconfigurator","private":false,"owner":{"login":"aryanjaindigitie","id":88190525,"node_id":"MDQ6VXNlcjg4MTkwNTI1","avatar_url":"https://avatars.githubusercontent.com/u/88190525?v=4","gravatar_id":"","url":"https://api.github.com/users/aryanjaindigitie","html_url":"https://github.com/aryanjaindigitie","followers_url":"https://api.github.com/users/aryanjaindigitie/followers","following_url":"https://api.github.com/users/aryanjaindigitie/following{/other_user}","gists_url":"https://api.github.com/users/aryanjaindigitie/gists{/gist_id}","starred_url":"https://api.github.com/users/aryanjaindigitie/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/aryanjaindigitie/subscriptions","organizations_url":"https://api.github.com/users/aryanjaindigitie/orgs","repos_url":"https://api.github.com/users/aryanjaindigitie/repos","events_url":"https://api.github.com/users/aryanjaindigitie/events{/privacy}","received_events_url":"https://api.github.com/users/aryanjaindigitie/received_events","type":"User","site_admin":false},"html_url":"https://github.com/aryanjaindigitie/digitizeconfigurator","description":null,"fork":false,"url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator","forks_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/forks","keys_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/keys{/key_id}","collaborators_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/teams","hooks_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/hooks","issue_events_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/issues/events{/number}","events_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/events","assignees_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/assignees{/user}","branches_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/branches{/branch}","tags_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/tags","blobs_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/git/refs{/sha}","trees_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/git/trees{/sha}","statuses_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/statuses/{sha}","languages_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/languages","stargazers_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/stargazers","contributors_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/contributors","subscribers_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/subscribers","subscription_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/subscription","commits_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/commits{/sha}","git_commits_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/git/commits{/sha}","comments_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/comments{/number}","issue_comment_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/issues/comments{/number}","contents_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/contents/{+path}","compare_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/compare/{base}...{head}","merges_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/merges","archive_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/downloads","issues_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/issues{/number}","pulls_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/pulls{/number}","milestones_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/milestones{/number}","notifications_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/labels{/name}","releases_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/releases{/id}","deployments_url":"https://api.github.com/repos/aryanjaindigitie/digitizeconfigurator/deployments","created_at":"2021-10-13T13:38:06Z","updated_at":"2021-10-13T13:52:35Z","pushed_at":"2021-10-13T13:52:32Z","git_url":"git://github.com/aryanjaindigitie/digitizeconfigurator.git","ssh_url":"git@github.com:aryanjaindigitie/digitizeconfigurator.git","clone_url":"https://github.com/aryanjaindigitie/digitizeconfigurator.git","svn_url":"https://github.com/aryanjaindigitie/digitizeconfigurator","homepage":null,"size":2973,"stargazers_count":0,"watchers_count":0,"language":"JavaScript","has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":true,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"network_count":0,"subscribers_count":1}
+[debug] [2022-01-04T14:24:53.528Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-04T14:24:53.528Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-04T14:24:53.714Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Tue, 04 Jan 2022 14:24:53 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-04T14:24:53.757Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/digitize-52e01/serviceAccounts  
+ {"accountId":"github-action-416758458","serviceAccount":{"displayName":"GitHub Actions (aryanjaindigitie/digitizeconfigurator)","description":"A service account with permission to deploy to Firebase Hosting for the GitHub repository aryanjaindigitie/digitizeconfigurator"}}
+[debug] [2022-01-04T14:24:58.186Z] ----------------------------------------------------------------------
+[debug] [2022-01-04T14:24:58.187Z] Command:       /opt/homebrew/Cellar/node/15.11.0/bin/node /opt/homebrew/bin/firebase init
+[debug] [2022-01-04T14:24:58.187Z] CLI Version:   10.0.1
+[debug] [2022-01-04T14:24:58.187Z] Platform:      darwin
+[debug] [2022-01-04T14:24:58.187Z] Node Version:  v15.11.0
+[debug] [2022-01-04T14:24:58.188Z] Time:          Tue Jan 04 2022 19:54:58 GMT+0530 (India Standard Time)
+[debug] [2022-01-04T14:24:58.188Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-04T14:24:58.191Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-04T14:24:58.191Z] > authorizing via signed-in user (aryanj@digitizeco.in)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/aryanjain/Documents/GitHub/digitask
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-01-04T14:25:02.690Z] > refreshing access token with scopes: []
+[debug] [2022-01-04T14:25:02.691Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-04T14:25:02.901Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Tue, 04 Jan 2022 14:25:02 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-04T14:25:02.951Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2022-01-04T14:25:03.743Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2022-01-04T14:25:03.743Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project digitize-52e01 (digitize) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[info] ✔  Wrote public/404.html 
+[debug] [2022-01-04T14:25:10.015Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2022-01-04T14:25:10.126Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2022-01-04T14:25:10.127Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"9.6.1","browserURL":"https://www.gstatic.com/firebasejs/9.6.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/9.6.1/firebase.tgz"},"live":{"version":"9.6","browserURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/9.6/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/9.6.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/9.6.1/firebase-auth/cordova.js","auth/react-native":"https://www.gstatic.com/firebasejs/9.6.1/firebase-auth/react-native.js","functions":"https://www.gstatic.com/firebasejs/9.6.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore/lite.js","storage":"https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/9.6.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/9.6.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/9.6.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/9.6.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js","firestore.memory":"https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of public/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/aryanjain/Documents/GitHub/digitask 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=839395875&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2022-01-04T14:25:12.689Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"654ce129aa73680b2bfc","redirect_uri":"http://localhost:9005","state":"839395875"}
+[debug] [2022-01-04T14:25:13.122Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Tue, 04 Jan 2022 14:25:13 GMT","content-type":"application/json; charset=utf-8","transfer-encoding":"chunked","vary":"X-PJAX, X-PJAX-Container, Accept-Encoding, Accept, X-Requested-With","permissions-policy":"interest-cohort=()","etag":"W/\"7600be326a74c303003687978f75eab9\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"0","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com objects-origin.githubusercontent.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events translator.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src render.githubusercontent.com viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com secured-user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/","x-github-request-id":"CF92:407B:1383731:1885790:61D458C8"}
+[debug] [2022-01-04T14:25:13.131Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2022-01-04T14:25:13.509Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2022-01-04T14:25:13.510Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"aryanjaindigitie","id":88190525,"node_id":"MDQ6VXNlcjg4MTkwNTI1","avatar_url":"https://avatars.githubusercontent.com/u/88190525?v=4","gravatar_id":"","url":"https://api.github.com/users/aryanjaindigitie","html_url":"https://github.com/aryanjaindigitie","followers_url":"https://api.github.com/users/aryanjaindigitie/followers","following_url":"https://api.github.com/users/aryanjaindigitie/following{/other_user}","gists_url":"https://api.github.com/users/aryanjaindigitie/gists{/gist_id}","starred_url":"https://api.github.com/users/aryanjaindigitie/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/aryanjaindigitie/subscriptions","organizations_url":"https://api.github.com/users/aryanjaindigitie/orgs","repos_url":"https://api.github.com/users/aryanjaindigitie/repos","events_url":"https://api.github.com/users/aryanjaindigitie/events{/privacy}","received_events_url":"https://api.github.com/users/aryanjaindigitie/received_events","type":"User","site_admin":false,"name":"Aryan Jain","company":"Digitizeco","blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"public_repos":9,"public_gists":0,"followers":0,"following":0,"created_at":"2021-07-30T10:39:06Z","updated_at":"2021-12-07T10:42:23Z","private_gists":0,"total_private_repos":3,"owned_private_repos":3,"disk_usage":56480,"collaborators":3,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] ✔  Success! Logged into GitHub as aryanjaindigitie 
+[info] 
